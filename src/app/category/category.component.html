@@ -1,0 +1,7 @@
+<div class="container-fluid">
+        <div class="row">
+                <div *ngFor="let category of categoryList" class="image-block col-sm-2 col-md-2 col-md-offset-1">
+                    <button type="button" (click)="ClickCategory(category.id)" class="btn btn-light btn-lg">{{category.categoryName}}</button>     
+                </div>                      
+        </div>
+    </div>
