@@ -1,0 +1,96 @@
+<div class="itemlist">
+<table class="table table-hover">
+    <thead>
+        <tr>
+
+            <th>#1108</th>
+            <td>Phone:7777777777</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bill of billList">
+            <td class="col-sm-2 col-md-8">
+                <div class="media">
+                    <div class="media-body">
+                        <span>{{bill.itemName}} </span>
+                    </div>
+                </div>
+            </td>
+            <td class="col-sm-1 col-md-1" style="text-align: center">
+                <button type="button" class="btn btn-light ">
+                    <span>-</span>
+                </button>
+                <p class="badge badge-primary badge-pill">{{bill.quantity}}</p>
+                <button type="button" class="btn btn-light">
+                    <span>+</span>
+                </button>
+            </td>
+            <td class="col-sm-1 col-md-1">
+                <button type="button" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove"></span> X
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
+<div class="total">
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <h5>Total</h5>
+            </td>
+            <td class="text-right">
+                <h5>
+                    <strong>{{total | currency:'BD'}}</strong>
+                </h5>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <h5>VAT</h5>
+            </td>
+            <td class="text-right">
+                <h5>
+                    <strong>{{tax | currency:'BD'}}</strong>
+                </h5>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <h4>Grand Total</h4>
+            </td>
+            <td class="text-right">
+                <h3>
+                    <strong>{{grandTotal | currency:'BD'}}</strong>
+                </h3>
+            </td>
+        </tr>
+    </table>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+
+            <button type="button" class="btn btn-warning">
+                Play
+            </button>
+        </div>
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-warning">
+                Send
+            </button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-warning">
+                Print & Send
+            </button>
+        </div>
+    </div>
+</div>

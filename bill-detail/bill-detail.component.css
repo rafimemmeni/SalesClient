@@ -1,0 +1,11 @@
+.total {
+    position: absolute;
+    bottom: 10px;
+  } 
+.item-count{
+padding : 2px;
+}
+.itemlist{
+    overflow: auto; 
+    max-height: 300px
+}

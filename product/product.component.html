@@ -1,0 +1,9 @@
+     <div class="container-fluid">
+                <div class="row">
+                        <div (click)="Clickitem(item.id)" *ngFor="let item of itemList" class="image-block col-sm-2 col-md-2 col-md-offset-1" style="background: url(assets/image/pizza.jpg) no-repeat center top;background-size:100px 100px;">
+                            <p class="add"> Add </p>
+                            <p>{{item.itemName}}</p>
+                            <p>{{item.price | currency:'BD'}}</p>
+                        </div>                                           
+                </div>
+            </div>
