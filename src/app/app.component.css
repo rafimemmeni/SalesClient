@@ -22,3 +22,18 @@
       }
       .row.content {height: auto;} 
     }
+    .bill{
+        position: relative;
+        height: 500px;
+    }
+    .category{
+      padding: 5px;
+      position: relative;
+      width:700px;
+      height:150px;
+    }
+    .item{
+      position: absolute;
+      width:700px;
+      height:250px;
+    }
